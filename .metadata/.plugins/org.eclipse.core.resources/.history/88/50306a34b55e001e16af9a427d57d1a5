@@ -1,0 +1,19 @@
+package com.manhattan.test;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.manhttan.Inter.StudentService;
+import com.manhttan.controller.StudentController;
+
+public class TestStudentController {
+
+	public void testSaveStudent() {
+		@Mock
+		StudentService ss;
+		@InjectMocks
+		StudentController sc;
+		
+		
+	}
+}

@@ -1,0 +1,24 @@
+package com.manhattan.test;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.Test;
+
+public class firstTest {
+
+	@Test // to make this method as test
+	public void testMethod() {
+		//fail("Test failed!!!");// To make our method fail
+		System.out.println("From my test method!!");
+
+	}
+	@Test
+	public void testSave() {
+		System.out.println("From my Test update");
+	}
+	@Test
+	public void testDelete() {
+		System.out.println("From my Test Delete");
+	}
+
+}

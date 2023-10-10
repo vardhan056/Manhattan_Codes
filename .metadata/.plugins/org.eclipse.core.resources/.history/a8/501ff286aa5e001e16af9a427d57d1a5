@@ -1,0 +1,23 @@
+package com.manhattan.DBTest;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.manhattan.Connection.DBConnection;
+
+public class TestDBConnection {
+	
+	private DBConnection dbcon;
+	
+	@BeforeEach
+	public void setUp() {
+		dbcon=new DBConnection();
+	}
+
+	@Test
+	public void testGetConnection() {
+		assertNotNull(dbcon.getConnection());
+	}
+}

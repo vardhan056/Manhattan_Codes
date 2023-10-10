@@ -1,0 +1,21 @@
+package com.manhattan.DBTest;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import com.manhattan.Connection.DBConnection;
+
+public class TestDBConnection {
+	
+	private DBConnection con;
+	
+	@BeforeEach
+	public void setUp() {
+		con=new DBConnection();
+	}
+
+	@Test
+	public void testGetConnection() {
+		
+	}
+}

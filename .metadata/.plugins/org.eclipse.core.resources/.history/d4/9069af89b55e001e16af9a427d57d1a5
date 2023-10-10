@@ -1,0 +1,25 @@
+package com.manhattan.test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+
+import com.manhttan.Inter.StudentService;
+import com.manhttan.controller.StudentController;
+
+public class TestStudentController {
+
+	
+		@Mock
+		StudentService ss;
+		@InjectMocks
+		StudentController sc;
+		public void testSaveStudent() {
+			when(sc.saveStudent(101, "supriya", 12000)).thenReturn(1);
+			assertEquals(1, sc.saveStudent(101, "supriya", 12000));
+		
+		
+	}
+}

@@ -1,0 +1,17 @@
+package com.manhattan.test;
+
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+
+public class AssertionEx {
+
+	@Test // to make this method as test
+	public void testSave() {
+		String expected ="hello";
+		String actual="hello";
+		//fail("Test failed!!!");// To make our method fail
+		System.out.println("From my test save!");
+
+	}
+}

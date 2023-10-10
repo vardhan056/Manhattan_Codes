@@ -1,0 +1,25 @@
+package com.manhattan;
+
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.manhattan.entity.Employee;
+import com.manhattan.repo.EmployeeRepo;
+
+@SpringBootTest
+public class ApplicationTests {
+	@Autowired
+	EmployeeRepo repo;
+	
+	@Test
+	public void save() {
+		Employee e = new Employee();
+		e.setEdi(1001);
+		e.setName("sam");
+		e.setSal(45000.0);
+		
+		Employee emp=repo.save(e);
+	}
+}

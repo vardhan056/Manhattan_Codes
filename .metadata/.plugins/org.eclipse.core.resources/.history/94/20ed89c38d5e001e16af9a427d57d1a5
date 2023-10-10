@@ -1,0 +1,38 @@
+package com.manhattan.test;
+
+import static org.junit.jupiter.api.Assertions.fail;
+
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
+
+@TestMethodOrder(OrderAnnotation.class)//to enable order
+public class firstTest {
+	
+	//by default we don't provide any running order it randomly run
+
+	@Test // to make this method as test
+	@Order(1)//to give running order
+	public void testSave() {
+		//fail("Test failed!!!");// To make our method fail
+		System.out.println("From my test save!");
+
+	}
+	@Test
+	@Order(2)
+	public void testUpdate() {
+		System.out.println("From my Test update!!");
+	}
+	@Test
+	@Order(4)
+	public void testDelete() {
+		System.out.println("From my Test Delete!!!");
+	}
+	@Test
+	@Order(2)
+	public void testFetch() {
+		System.out.println("From my Test Fetch!!!");
+	}
+
+}

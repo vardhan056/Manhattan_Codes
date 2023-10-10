@@ -1,0 +1,20 @@
+package com.manhattan.calculator;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+import com.manhattan.Calculator.serviceCalculator;
+
+public class TestCalculator {
+
+	@Test
+	public void Testadd() {
+		serviceCalculator c =new serviceCalculator();
+		int expected=30;
+		int actual=c.add(10,20);
+		assertEquals(expected, actual"values not matched");
+	}
+
+	
+}

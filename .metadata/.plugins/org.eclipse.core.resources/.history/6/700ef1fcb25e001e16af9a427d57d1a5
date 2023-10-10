@@ -1,0 +1,8 @@
+package com.manhttan.controller;
+
+import com.manhttan.Inter.StudentService;
+
+public class StudentController {
+private StudentService std;
+public void saveStudent();
+}

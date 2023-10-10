@@ -1,0 +1,19 @@
+package com.manhattan.test;
+
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+
+public class AssertionEx {
+
+	@Test 
+	public void testSave() {
+		String expected ="hello";
+		String actual="helelo";
+		assertEquals(expected, actual,"May be not matched test fail");//method to check expected and actual result are equal or not
+		System.out.println("From my test save!");
+
+	}
+}
